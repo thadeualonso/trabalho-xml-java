@@ -14,6 +14,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import net.sf.saxon.s9api.*;
+import org.w3c.dom.NodeList;
 
 /**
  *
@@ -39,15 +40,18 @@ public class JFrame1 extends javax.swing.JFrame {
     public JFrame1() {
         initComponents();
         
-        doc=InterfaceXML.loadFromFile("Locadora.xml");
-        XPathFactory xf=XPathFactory.newInstance();
-        xpath=xf.newXPath();
-        Processor p=new Processor(false);
+        doc = InterfaceXML.createDocument();
+        doc = InterfaceXML.loadFromFile("Locadora.xml");
+        XPathFactory xf = XPathFactory.newInstance();
+        xpath = xf.newXPath();
+        Processor p = new Processor(false);
         try {
-            xqdoc=p.newDocumentBuilder().build(new DOMSource(doc));
-            xqc=p.newXQueryCompiler();
+            xqdoc = p.newDocumentBuilder().build(new DOMSource(doc));
+            xqc = p.newXQueryCompiler();
         } catch (Exception e) {
-        }         
+        }     
+        
+        System.out.println(doc);
         
         j=new Jogador();
         Arma a=new Arma();
@@ -383,11 +387,23 @@ public class JFrame1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here: 
-        Element xmlCliente = cliente.getXml(doc);
+        
+        Element clienteXml = cliente.getXml(doc);
+        Node node = doc.getElementsByTagName("Clientes").item(0);
+        
+        if(node.getNodeType() == Node.ELEMENT_NODE)
+        {
+            Element e = (Element) node;
+            
+            e.appendChild(clienteXml);
+        }
+        
+        InterfaceXML.saveXML(doc, "Locadora.xml");
+        
+        /*Element xmlCliente = cliente.getXml(doc);
         Node xmlToImport = doc.importNode(xmlCliente, true);
         doc.appendChild(xmlToImport);
-        InterfaceXML.saveXML(doc, "Locadora.xml");
+        InterfaceXML.saveXML(doc, "Locadora.xml");*/
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

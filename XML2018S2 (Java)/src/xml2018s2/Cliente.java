@@ -37,7 +37,7 @@ public class Cliente {
         return doc;
     }
      
-      public Element getXml(Document doc)
+    public Element getXml(Document doc)
     {
         Element cliente = doc.createElement("Cliente");
         
@@ -76,7 +76,8 @@ public class Cliente {
         
         return cliente;
     }
-        public static Cliente loadXML(Element cliente){
+        
+    public static Cliente loadXML(Element cliente){
         if(!cliente.getNodeName().equals("Cliente")){
             return null;
         }

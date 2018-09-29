@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Locadora>
   <Filmes>
     <Filme categoria="Acao">
@@ -96,7 +96,7 @@
       <Senha>123456</Senha>
       <Permissao>1</Permissao>
     </Cliente>
-  </Clientes>
+  <Cliente><Cod>1</Cod><Nome>Gabriel</Nome><Email>gabrel_locasso@quentemail.com</Email><CPF>123456789</CPF><Nascimento>12/05/1990</Nascimento><Login>1212</Login><Senha>12345</Senha><Permissao>0</Permissao></Cliente></Clientes>
   <Locacoes>
     <Locacao>
       <CodL>1</CodL>
