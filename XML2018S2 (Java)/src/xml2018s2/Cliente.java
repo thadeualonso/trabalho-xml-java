@@ -12,14 +12,14 @@ public class Cliente {
     private String email;
     private String cpf;
     private String data_nascimento;
-    private long login;
+    private String login;
     private long senha;
     private long permissao;
     
     
     public Cliente(){ }
     
-    public Cliente (long id, String nome, String email, String cpf, String data_nascimento, long login, long senha, long permissao) {
+    public Cliente (long id, String nome, String email, String cpf, String data_nascimento, String login, long senha, long permissao) {
         this.id = id;
         this.nome = nome;
         this.email = email;
@@ -103,7 +103,7 @@ public class Cliente {
                 c.data_nascimento=ni.getTextContent();
             }
             if(ni.getNodeName().equals("Login")){
-                c.login=Long.parseLong(ni.getTextContent());
+                c.login=ni.getTextContent();
             }
             if(ni.getNodeName().equals("Senha")){
                 c.senha=Long.parseLong(ni.getTextContent());

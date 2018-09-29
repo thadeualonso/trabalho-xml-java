@@ -44,7 +44,7 @@
       <Sinopse>Battleroyale na vida real</Sinopse>
       <Ano>2015</Ano>
     </Filme>
-  </Filmes>
+  <Filme categoria="Animação"><Cod>23</Cod><Nome>Os Incriveis</Nome><Sinopse>Filme de super heroi</Sinopse><Ano>2006</Ano></Filme></Filmes>
   <Clientes>
     <Cliente>
       <Cod>1</Cod>
@@ -96,7 +96,7 @@
       <Senha>123456</Senha>
       <Permissao>1</Permissao>
     </Cliente>
-  <Cliente><Cod>1</Cod><Nome>Gabriel</Nome><Email>gabrel_locasso@quentemail.com</Email><CPF>123456789</CPF><Nascimento>12/05/1990</Nascimento><Login>1212</Login><Senha>12345</Senha><Permissao>0</Permissao></Cliente></Clientes>
+  <Cliente><Cod>1</Cod><Nome>Gabriel</Nome><Email>gabrel_locasso@quentemail.com</Email><CPF>123456789</CPF><Nascimento>12/05/1990</Nascimento><Login>1212</Login><Senha>12345</Senha><Permissao>0</Permissao></Cliente><Cliente><Cod>23</Cod><Nome>Craudio</Nome><Email>craudio@gmail.com</Email><CPF>555.555.555-55</CPF><Nascimento>01-01-1960</Nascimento><Login>craucrau</Login><Senha>123</Senha><Permissao>1</Permissao></Cliente></Clientes>
   <Locacoes>
     <Locacao>
       <CodL>1</CodL>
@@ -182,5 +182,5 @@
       <DataDev>
       </DataDev>
     </Locacao>
-  </Locacoes>
+  <Locacao><Cod>5</Cod><CodC>1</CodC><CodF>2</CodF><DataLoc>28-09-2018</DataLoc><DataDev/></Locacao></Locacoes>
 </Locadora>

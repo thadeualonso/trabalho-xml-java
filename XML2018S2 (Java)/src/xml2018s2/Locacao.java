@@ -13,6 +13,16 @@ public class Locacao {
     private String data_devolucao;
     
     public Locacao() {}
+
+    public Locacao(long id, long idCliente, long idFilme, String data_locacao, String data_devolucao) {
+        this.id = id;
+        this.idCliente = idCliente;
+        this.idFilme = idFilme;
+        this.data_locacao = data_locacao;
+        this.data_devolucao = data_devolucao;
+    }
+    
+    
     
      ArrayList<Cliente> clientes;
       public Cliente getcliente(int i){
@@ -56,13 +66,6 @@ public class Locacao {
         Element data_devolucao=doc.createElement("DataDev");
         data_devolucao.setTextContent(this.data_devolucao);
         locacao.appendChild(data_devolucao);
-        
-        
-        Element clientes=doc.createElement("clientes");
-        for(Cliente c:this.clientes){
-            clientes.appendChild(c.getXml(doc));
-        }
-        locacao.appendChild(clientes);
         
         return locacao;
     }
