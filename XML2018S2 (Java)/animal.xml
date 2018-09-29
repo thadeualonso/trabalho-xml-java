@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animal><Id>1</Id><Nome>Fernando</Nome><Raca>Cachorro</Raca><Sexo>M</Sexo><Cor>Preto</Cor><Nascimento>15/02/2016</Nascimento><Peso>20</Peso><Altura>30</Altura><Tipo>Canino</Tipo><Usuario><Login>thadeu.alonso</Login><Senha>123</Senha><Email>thadeu.alonso@dogmail.com</Email></Usuario></Animal>

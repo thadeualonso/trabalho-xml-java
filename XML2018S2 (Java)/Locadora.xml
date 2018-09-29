@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Locadora>
+  <Filmes>
+    <Filme categoria="Acao">
+      <Cod>1</Cod>
+      <Nome>Filme 1</Nome>
+      <Sinopse>Filmes do Exemplo 1</Sinopse>
+      <Ano>2016</Ano>
+    </Filme>
+    <Filme categoria="Aventura">
+      <Cod>2</Cod>
+      <Nome>Filme 2</Nome>
+      <Sinopse>Filmes do Exemplo 2</Sinopse>
+      <Ano>2016</Ano>
+    </Filme>
+    <Filme categoria="Suspense">
+      <Cod>3</Cod>
+      <Nome>Filme 3</Nome>
+      <Sinopse>Filmes do Exemplo 3</Sinopse>
+      <Ano>2017</Ano>
+    </Filme>
+    <Filme categoria="Drama">
+      <Cod>4</Cod>
+      <Nome>Filme 4</Nome>
+      <Sinopse>Filmes do Exemplo 4</Sinopse>
+      <Ano>2017</Ano>
+    </Filme>
+    <Filme>
+      <Cod>5</Cod>
+      <Nome>Android</Nome>
+      <Sinopse>Legal</Sinopse>
+    </Filme>
+    <Filme>
+      <Cod>6</Cod>
+      <Nome>Capitã Marvel</Nome>
+      <Categoria>Ação</Categoria>
+      <Sinopse>Filme de super heroi</Sinopse>
+      <Ano>2019</Ano>
+    </Filme>
+    <Filme>
+      <Cod>7</Cod>
+      <Nome>Jogos Vorazes</Nome>
+      <Categoria>Ação</Categoria>
+      <Sinopse>Battleroyale na vida real</Sinopse>
+      <Ano>2015</Ano>
+    </Filme>
+  </Filmes>
+  <Clientes>
+    <Cliente>
+      <Cod>1</Cod>
+      <Nome>Jose</Nome>
+      <Email>contato@sistema.com</Email>
+      <CPF>133.333.335-05</CPF>
+      <Nascimento>01-05-1991</Nascimento>
+      <Login>01</Login>
+      <Senha>123456</Senha>
+      <Permissao>1</Permissao>
+    </Cliente>
+    <Cliente>
+      <Cod>2</Cod>
+      <Nome>victor</Nome>
+      <Email>sistema@sistema.com</Email>
+      <CPF>155.222.955-02</CPF>
+      <Nascimento>10-10-2017</Nascimento>
+      <Login>baldez</Login>
+      <Senha>123456</Senha>
+      <Permissao>1</Permissao>
+    </Cliente>
+    <Cliente>
+      <Cod>3</Cod>
+      <Nome>Mariana</Nome>
+      <Email>teste@teste.com</Email>
+      <CPF>111.111.111-11</CPF>
+      <Nascimento>20-10-1996</Nascimento>
+      <Login>mariana</Login>
+      <Senha>123456</Senha>
+      <Permissao>1</Permissao>
+    </Cliente>
+    <Cliente>
+      <Cod>1</Cod>
+      <Nome>t</Nome>
+      <Email>aa@gmail.com</Email>
+      <CPF>1111111111</CPF>
+      <Nascimento>111111</Nascimento>
+      <Login>rasaesaesa</Login>
+      <Senha>123</Senha>
+      <Permissao>1</Permissao>
+    </Cliente>
+    <Cliente>
+      <Cod>4</Cod>
+      <Nome>Thadeu Alonso</Nome>
+      <Email>thadeu.alonso@gmail.com</Email>
+      <CPF>147.158.147-06</CPF>
+      <Nascimento>23-07-1994</Nascimento>
+      <Login>thadeu.alonso</Login>
+      <Senha>123456</Senha>
+      <Permissao>1</Permissao>
+    </Cliente>
+  </Clientes>
+  <Locacoes>
+    <Locacao>
+      <CodL>1</CodL>
+      <CodC>1</CodC>
+      <CodF>1</CodF>
+      <DataLoc>03-06-2017</DataLoc>
+      <DataDev>15-06-2017</DataDev>
+    </Locacao>
+    <Locacao>
+      <CodL>2</CodL>
+      <CodC>2</CodC>
+      <CodF>4</CodF>
+      <DataLoc>10-10-2017</DataLoc>
+      <DataDev>12-10-2017</DataDev>
+    </Locacao>
+    <Locacao>
+      <CodL>3</CodL>
+      <CodC>2</CodC>
+      <CodF>1</CodF>
+      <DataLoc>10-10-2017</DataLoc>
+      <DataDev>15-10-2017</DataDev>
+    </Locacao>
+    <Locacao>
+      <CodL>4</CodL>
+      <CodC>3</CodC>
+      <CodF>5</CodF>
+      <DataLoc>20-06-2017</DataLoc>
+      <DataDev>20-07-2017</DataDev>
+    </Locacao>
+    <Locacao>
+      <Cod>5</Cod>
+      <CodF>6</CodF>
+      <CodC>4</CodC>
+      <DataLoc>26-09-2018</DataLoc>
+      <DataDev>
+      </DataDev>
+    </Locacao>
+    <Locacao>
+      <Cod>6</Cod>
+      <CodF>5</CodF>
+      <CodC>4</CodC>
+      <DataLoc>26-09-2018</DataLoc>
+      <DataDev>
+      </DataDev>
+    </Locacao>
+    <Locacao>
+      <Cod>10</Cod>
+      <CodF>1</CodF>
+      <CodC>4</CodC>
+      <DataLoc>26-09-2018</DataLoc>
+      <DataDev>
+      </DataDev>
+    </Locacao>
+    <Locacao>
+      <Cod>12</Cod>
+      <CodF>2</CodF>
+      <CodC>4</CodC>
+      <DataLoc>26-09-2018</DataLoc>
+      <DataDev>
+      </DataDev>
+    </Locacao>
+    <Locacao>
+      <Cod>13</Cod>
+      <CodF>6</CodF>
+      <CodC>4</CodC>
+      <DataLoc>26-09-2018</DataLoc>
+      <DataDev>
+      </DataDev>
+    </Locacao>
+    <Locacao>
+      <Cod>20</Cod>
+      <CodF>2</CodF>
+      <CodC>4</CodC>
+      <DataLoc>026-09-2018</DataLoc>
+      <DataDev>
+      </DataDev>
+    </Locacao>
+    <Locacao>
+      <Cod>25</Cod>
+      <CodF>1</CodF>
+      <CodC>1</CodC>
+      <DataLoc>26-09-2018</DataLoc>
+      <DataDev>
+      </DataDev>
+    </Locacao>
+  </Locacoes>
+</Locadora>
